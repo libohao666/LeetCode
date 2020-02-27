@@ -10,8 +10,8 @@ git commit -m $(date "+%Y%m%d")
 expect<<EOF
 spawn git push origin master
 set timeout 2
-expect "Username for" {send "libohao666\r"}
-expect "Password for" {send "libohao0\r"}
+expect "Username for" {send "${username}\r"}
+expect "Password for" {send "${libohao0}\r"}
 EOF
 
 echo "======提交结束======"
