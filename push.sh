@@ -1,5 +1,7 @@
 git add *
 git commit -m $(date "+%Y%m%d")
 git push origin master
-echo "libohao666"
-echo "libohao0"
+expect "*Username for 'https://github.com':*"
+send "libohao666"
+expect "*Password for 'https://libohao666@github.com':*"
+send "libohao0"
