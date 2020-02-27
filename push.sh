@@ -10,8 +10,8 @@ git push origin master
 
 expect<<EOF
 spawn ./push-1.sh
-expect "*Username*" {send "${username}\r"}
-expect "*Password*" {send "${password}\r"}
+expect "Username for" {send "${username}\r"}
+expect "Password for" {send "${password}\r"}
 EOF
 
 echo "======提交结束======"
