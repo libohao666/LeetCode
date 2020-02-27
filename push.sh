@@ -1,7 +1,7 @@
 #!/usr/bin/expect
 spawn ./push-1.sh
-expect "*Username for 'https://github.com':*"
+expect "*Username*"
 send "libohao666\r"
-expect "*Password for 'https://libohao666@github.com':*"
-send "libohaoo0\r"
+expect "*Password*"
+send "libohao0\r"
 send "\n"
