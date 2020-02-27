@@ -1,6 +1,6 @@
 #!/bin/bash
-username = "libohao666"
-password = "libohao0"
+username="libohao666"
+password="libohao0"
 
 echo "=======提交开始======"
 
